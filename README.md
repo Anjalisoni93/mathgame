@@ -10,7 +10,9 @@
 - require player, question
 - player1 = Player.new(player1)
 - methods for each class
-  - checkForTurn
+  - def askQuestion
+    - @content = Question.new
+    - if @player1 == current_player
   - checkForAnswer (gets.chomp.to_i)
   - checkForWinner
 
@@ -36,4 +38,23 @@ def initialize
 
  @createNewQuestion = "flvdf #{num}"
 
- 
+ ### Game Loop
+ - require player and question
+ - initialize player 1 and player 2
+
+ - start game loop (askQuestion)
+ - check for turn and ask the question
+ - player will answer something
+ - compare the answer to see if its correct
+ - tell the user if its correct or not
+ - Adjust the score and output that score
+ - we will switch players 
+ - it ends the loop and starts again
+ - 
+
+
+def askQuestion
+
+
+
+
