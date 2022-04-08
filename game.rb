@@ -1,10 +1,11 @@
-require './player.rb'
-require './question.rb'
-
 class Game
-    
-  # @player1 = Player.new('Player 1')
-  # @player2 = Player.new('Player 2')
+
+  # attr_accessor :player1, :player2
+  
+  # def initialize(player1, player2)
+  #   @player1 = player1
+  #   @player2 = player2
+  # end
 
   def gameOver(player)
     puts "#{player.name} wins with a score of #{player.lives}/3"
@@ -17,6 +18,7 @@ class Game
     
     player1 = Player.new("Player_1")
     player2 = Player.new("Player_2")
+    
     current_player = player1
     
     while @gameOver == false do
